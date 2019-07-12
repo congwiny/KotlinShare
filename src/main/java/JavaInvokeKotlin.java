@@ -37,6 +37,9 @@ public class JavaInvokeKotlin {
         System.out.println(Account.interestRate); //0.018
         System.out.println(StaticField.MAX_COUNT); //500
 
+        kt.ChatBot.greet("Tom");
+        ChatBot.greet("Tom");
+
         //访问静态函数
         Singleton.displayX();
         Account.interestBy(5000);
@@ -44,7 +47,7 @@ public class JavaInvokeKotlin {
 
         Employee emp = new Employee();
         //访问Kotlin中内部可见性的Employee成员属性no
-        //int no = emp.getNo$share();//虽然能编译通过，运行时报错：“java:找不到符号”
+        //int no = emp.getNo$share_main();//虽然能编译通过，运行时报错：“java:找不到符号”
 
         Department dept = new Department();
         //访问Kotlin中公有可见性的Department成员属性name

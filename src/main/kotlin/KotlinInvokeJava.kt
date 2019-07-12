@@ -46,4 +46,13 @@ fun main(args: Array<String>) {
     // 调用calculateInt函数进行减法计算
     println("$n1 - $n2 = ${f2.calculateInt(n1, n2)}")
 
+    val javaObj = JavaArrayExample()
+    val array = intArrayOf(0, 1, 2, 3)
+    javaObj.removeIndicesVarArg(*array)
+    //javaObj.removeIndicesVarArg(null)
+    //removeIndicesVarArg(null)
+}
+
+fun removeIndicesVarArg(vararg args:Int){
+
 }

@@ -11,6 +11,12 @@ public class Person {
 
     private List<String> mHobbys;
 
+    public Person p;
+
+    public String[] children;
+
+    public Person[] supperman = new Superman[3];
+
     public int getAge() {
         return age;
     }
